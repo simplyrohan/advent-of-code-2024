@@ -45,7 +45,7 @@ def solve(list1: list[int], list2: list[int]):
     return sum(abs(list1[i] - list2[i]) for i in range(len(list1)))
 
 
-with open("day1.txt", "r") as f:
+with open("day1/day1.txt", "r") as f:
     lines = f.readlines()
     list1, list2 = zip(*([[int(l.split()[0]), int(l.split()[-1])] for l in lines]))
     print(solve(list(list1), list(list2))) # Solve: 2970687

@@ -23,7 +23,7 @@ def solve(reports: list[list[int]]):
     return safe
 
 
-with open("day2.txt", "r") as f:
+with open("day2/day2.txt", "r") as f:
     reports = []
     for report in f.readlines():
         reports.append([int(t) for t in report.split()])
