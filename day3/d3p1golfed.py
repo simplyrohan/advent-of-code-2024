@@ -1,0 +1,1 @@
+print(sum([int(match[4:-1].split(',')[0]) * int(match[4:-1].split(',')[1]) for match in __import__('re').findall(r"mul\(\d{1,3},\d{1,3}\)", open('day3/day3input.txt').read())]))
